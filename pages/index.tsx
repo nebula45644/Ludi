@@ -219,10 +219,10 @@ const Home: NextPage = ({ particles }: any) => {
           <div className={styles["main-page-about-init"]} id="ab-cloak" onClick={Settings}><IoSettingsOutline /></div>
 
           <div id={styles["main-page-init"]}>
-            <h1 className={styles["main-title"]}><span>Ludicrous</span> <FaGithub style={{"cursor": "pointer"}} onClick={(e) => {window.open('https://github.com/TitaniumNetwork-Dev/Ludicrous');}} /></h1>
-            <h2 className={styles["main-desc"]}>Search Google Or Type A URL</h2>
+            <h1 className={styles["main-title"]}><span>Ludicrous</span> <FaGithub style={{"cursor": "pointer"}} onClick={(e) => {window.open('https://github.com/nebula45644/Ludi');}} /></h1>
+            <h2 className={styles["main-desc"]}>Freedom Unlocked</h2>
             <form method="GET" id={styles.form} action="/route">
-              <input name="query" id={styles["main-input"]} onKeyDown={(event: any) => event.key == "Enter" ? (event.target as any)?.parentNode!.requestSubmit() : null} placeholder="Enter URL or Search Query" autoComplete="off" />
+              <input name="query" id={styles["main-input"]} onKeyDown={(event: any) => event.key == "Enter" ? (event.target as any)?.parentNode!.requestSubmit() : null} placeholder="Search The Web Or Type A URL" autoComplete="off" />
               <input title="hidden" placeholder="hidden" style={{position: "absolute", left: "-1000000000000px"}} value={location.href} name="origin" readOnly />
               <div id="omnibox-container" style={{display: "none"}} className={styles['omnibox-container']}>
                 {
