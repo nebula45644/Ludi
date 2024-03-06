@@ -306,7 +306,7 @@ const Apps: NextPage = ({ apps, games, bookmarks, particles, origin }: any) => {
             <h2>Credits <IoChevronDown className={styles['toggle-chevron']} onClick={creditsHide} id="creditshow"/></h2>
 
             <div id={styles['credits-over']}>
-              Me
+              titaniumnetwork for ludicrous and rmb217 on discord for this modified version
             </div>
           </div>
         </div>
