@@ -156,12 +156,12 @@ const Games: NextPage = ({ apps, games, bookmarks, particles, origin }: any) => 
   return (
     <div className={styles.main}>
       <Head>
-        <meta name="description" content="Ludicrous | A School Site" />
+        <meta name="description" content="test" />
         <meta name="theme-color" content="#2467a5" />
         <meta charSet='utf-8' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover, maximum-scale=6'/>
-        <title>Ludicrous - Games</title>
+        <title>Games</title>
         <link rel='manifest' href='/manifest.json' />
         <link href='/icons/favicon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
         <link href='/icons/favicon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
@@ -210,7 +210,7 @@ Games.getInitialProps = async function( { req } ) {
     };
   } else if (global.window) {
     return {
-      apps: [{name: 'GeForce Now', icon: '/icon/gfn.ico', url: 'https://play.geforcenow.com/mall/',},{name: 'Youtube', icon: '/icon/yt.ico', url: 'https://www.youtube.com',},{name: 'Google Search', icon: '/icon/google.ico', url: 'https://www.google.com/webhp',},{name: 'Reddit', icon: '/icon/reddit.ico', url: 'https://reddit.com',},{name: 'Discord', icon: '/icon/discord.ico', url: 'https://discord.com',},{name: 'now.gg', icon: '/icon/now.ico', url: 'https://now.gg',},{name: 'Twitter', icon: '/icon/twitter.ico', url: 'https://twitter.com',},{name: 'Github', icon: '/icon/git.ico', url: 'https://github.com',},{name: 'Webretro', icon: '/icon/retro.ico', url: '/webretro/', proxy: false},{name: 'Spotify', icon: '/icon/spot.ico', url: 'https://spotify.com',},{name: 'Replit', icon: '/icon/repl.ico', url: 'https://replit.com',},{name: 'Wikipedia', icon: '/icon/wiki.ico', url: 'https://wikipedia.org',},].map((e:any,i)=>{return {...e,id:i+1+''}}),
+      apps: [{name: 'GeForce Now', icon: '/icon/gfn.ico', url: 'https://play.geforcenow.com/mall/',},{name: 'Youtube', icon: '/icon/yt.ico', url: 'https://www.youtube.com',},{name: 'Google Search', icon: '/icon/google.ico', url: 'https://www.google.com/webhp',},{name: 'Discord', icon: '/icon/discord.ico', url: 'https://discord.com',},{name: 'now.gg', icon: '/icon/now.ico', url: 'https://nowgg.me',},{name: 'Github', icon: '/icon/git.ico', url: 'https://github.com',},{name: 'Webretro', icon: '/icon/retro.ico', url: '/webretro/', proxy: false},{name: 'Spotify (DOWN)', icon: '/icon/spot.ico', url: 'https://spotify.com',},{name: 'Replit', icon: '/icon/repl.ico', url: 'https://replit.com',},].map((e:any,i)=>{return {...e,id:i+1+''}}),
       bookmarks: [
         {name: 'LTBEEF + Ingot', code: `javascript:(function () {var a = document.createElement('script');a.src = '!!{origin}/scripts/ingot.min.js';document.body.appendChild(a);}())`,description: `LTBEEF (literally the best exploit ever found): Disables any extension with a nice UI. go to <b style="text-decoration: underline !important;" onclick="open('https://chrome.google.com/webstorex')">https://chrome.google.com/webstorex</b> and run the bookmarklet. <b>USES INGOT UI by Nebelung</b>`},
         {name: 'Flooder', code: `javascript:(e=>{var num=prompt('How Times Do You Want This Page To Show Up In your History?');done=false;x=window.location.href;for (var i=1; i<=num; i++){history.pushState(0, 0, i==num?x:i.toString());if(i==num){done=true}}if(done===true){alert('Flooding Successful!\n '+window.location.href+' \nIs Now In Your History '+num+(num==1?' time.':' Times. '))}})()`, description: `Flooder (history flooder): Floods your <i>History</i> with a set number of entries. Creator: waldo#9044`},
