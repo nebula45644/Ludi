@@ -217,7 +217,7 @@ const Home: NextPage = ({ particles }: any) => {
           <div className={styles["main-page-about-init"]} id="ab-cloak" onClick={Settings}><IoSettingsOutline /></div>
 
           <div id={styles["main-page-init"]}>
-            <h1 className={styles["main-title"]}><span>test</span> <FaGithub style={{"cursor": "pointer"}} onClick={(e) => {window.open('https://github.com/nebula45644/Ludi');}} /></h1>
+            <h1 className={styles["main-title"]}><span>Skibidi Proxy</span> <FaGithub style={{"cursor": "pointer"}} onClick={(e) => {window.open('https://github.com/nebula45644/Ludi');}} /></h1>
             <h2 className={styles["main-desc"]}>Freedom Unlocked</h2>
             <form method="GET" id={styles.form} action="/route">
               <input name="query" id={styles["main-input"]} onKeyDown={(event: any) => event.key == "Enter" ? (event.target as any)?.parentNode!.requestSubmit() : null} placeholder="Search The Web Or Type A URL" autoComplete="off" />
