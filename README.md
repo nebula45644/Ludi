@@ -1,14 +1,14 @@
-# Ludicrous
-The Ludicrous Web Proxy Site: Fast, Simple, Small. The flagship site of Ludicrous
+# test
+a test site for my upcoming proxy
 
-<img src="https://github.com/TitaniumNetwork-dev/Ludicrous/blob/main/example.jpeg?raw=true">
+
 
 ## Installation
 
 ```bash
-git clone https://github.com/TitaniumNetwork-dev/Ludicrous
+git clone https://github.com/nebula45644/ludi
 
-cd Ludicrous
+cd ludi
 
 npm install
 npm run build
