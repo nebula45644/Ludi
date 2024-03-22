@@ -33,7 +33,7 @@ const aboutBlank: Function = (event: any) => {
   if (global.window) {
     var openWin: any = global.window.open('about:blank');
 
-    openWin.document.write('<head><title>Classes</title><link rel="icon" type="image/png" href="https://ssl.gstatic.com/classroom/favicon.png"><style>body {margin:0;overflow:hidden}</style></head><body><iframe width="100%" height="100%" src="' + global.window.location.href + '" frameborder="0"></iframe></body>');
+    openWin.document.write('<head><title>Home View Summary</title><link rel="icon" type="image/png" href="https://ssl.gstatic.com/classroom/favicon.png"><style>body {margin:0;overflow:hidden}</style></head><body><iframe width="100%" height="100%" src="' + global.window.location.href + '" frameborder="0"></iframe></body>');
     openWin.document.close();
 
     Close();
