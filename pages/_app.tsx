@@ -125,7 +125,7 @@ function Ludicrous({ Component, pageProps }: AppProps) {
     }, 250);
   }
   
-  g.ludicrous = {
+  g.test = {
     mode: process.env.NODE_ENV,
     framework: 'next',
     blank: (e: any) => {
