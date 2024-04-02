@@ -7,6 +7,6 @@ if (!navigator.onLine) {
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker.getRegistrations().then(function(registrations) {
         if (registrations.length !== 3)
-            return window.ludicrous.sw();
+            return window.test.sw();
     });
 }
